@@ -12,9 +12,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Calculator',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      theme: ThemeData.light(),   // light mode
+      darkTheme:ThemeData(
+        brightness: Brightness.dark,
+        scaffoldBackgroundColor: Colors.black, // body background
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.black, // AppBar background
+          elevation: 0, // optional, removes shadow
+        ),
       ),
+      themeMode: ThemeMode.system,
       home: Home(),
     );
   }
