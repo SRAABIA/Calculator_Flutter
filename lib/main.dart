@@ -1,4 +1,5 @@
 import 'package:calculator/home.dart';
+import 'package:calculator/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       themeMode: ThemeMode.system,
-      home: Home(),
+      home: SplashScreen(),
     );
   }
 }
