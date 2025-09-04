@@ -1,4 +1,3 @@
-import 'package:calculator/home.dart';
 import 'package:calculator/splash_screen.dart';
 import 'package:flutter/material.dart';
 
